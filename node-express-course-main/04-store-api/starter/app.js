@@ -33,7 +33,7 @@ const start = async (params) => {
             console.log(`Server is listening on port ${port}...`);
         });
     } catch (error) {
-        
+        console.log(error);
     }
 }
 start();
