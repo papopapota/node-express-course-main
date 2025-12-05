@@ -26,7 +26,7 @@ const dashboard = async (req, res) => {
         const luckuNumber = Math.floor(Math.random() * 100);
         res.status(200).json({
             msg: `Hello, ${decoded.username}`,
-            secret: `Heres is your          q authorized data, your lucky numbers is ${luckuNumber}`
+            secret: `Heres is your authorized data, your lucky numbers is ${luckuNumber}`
         })
     } catch (error) {
         throw new CustomAPIError('Not authorized to access this route', 401);
